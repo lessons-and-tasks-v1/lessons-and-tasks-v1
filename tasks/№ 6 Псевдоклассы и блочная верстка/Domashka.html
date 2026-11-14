@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Моя страница</title>
-        <style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <style>
         header {
             display: flex;
-            background-color:#2c3e50 ;
+            background-color: #2c3e50;
             padding: 10px;
             color: white;
             justify-content: space-between;
             align-items: center;
         }
+
         ul {
             display: flex;
             flex-direction: row;
@@ -20,42 +22,51 @@
             gap: 10px;
             justify-content: center;
         }
+
         header a {
             color: white;
             text-decoration: none;
         }
+
         li {
             text-decoration: none;
             list-style: none;
         }
+
         nav {
             display: inline;
         }
+
         body {
             margin: 0;
             padding: 5px 10px;
             background-color: #f4f4f4;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         .card {
             background-color: white;
             border-radius: 5px;
             padding: 10px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); 
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
         }
-           .link-blue {
+
+        .link-blue {
             text-decoration: none;
             color: #a3d8f4;
-           }
-           .link-orange {
+        }
+
+        .link-orange {
             text-decoration: none;
             color: #f2be89;
-           }
-           .link-purple {
+        }
+
+        .link-purple {
             text-decoration: none;
             color: #944f9a;
-           }
-           button {
+        }
+
+        button {
             background-color: #27ae60;
             margin: 10px;
             border-radius: 5px;
@@ -63,110 +74,120 @@
             color: white;
             padding: 10px;
 
-           }
-           footer {
+        }
+
+        footer {
             background-color: #2c3e50;
             padding: 20px;
             color: white;
             margin: 5px;
             text-align: center;
-           }
-           .links-list {
+        }
+
+        .links-list {
             justify-content: left;
             gap: 30px;
-           }
-           .links-section {
+        }
+
+        .links-section {
             background-color: white;
             border-radius: 5px;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
             padding: 5px;
             margin: 4px;
-           }
-           .links-section h2 {
+        }
+
+        .links-section h2 {
             padding: 10px;
-           }
-           footer a {
+        }
+
+        footer a {
             color: orange;
-           }
-           .card-hover:hover {
+        }
+
+        .card-hover:hover {
             color: orange;
-           }
-           .cards-list {
+        }
+
+        .cards-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
             gap: 16px;
             padding: 10px;
-           }
-           header nav ul li {
+        }
+
+        header nav ul li {
             font-size: 15px;
-           }
+        }
     </style>
-    </head>
-    <body>
+</head>
 
-        <!-- Шапка сайта -->
-        <header>
-            <div class="logo">
-                <h1>Моя страница</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="card-hover">Главная</a></li>
-                    <li><a href="#" class="card-hover">О нас</a></li>
-                    <li><a href="#" class="card-hover">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
 
-        <!-- Основной контент -->
-        <main>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <h1>Моя страница</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="card-hover">Главная</a></li>
+                <li><a href="#" class="card-hover">О нас</a></li>
+                <li><a href="#" class="card-hover">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <!-- Блок с карточками (теперь это список) -->
-            <section class="cards-section">
-                <ul class="cards-list">
-                    <li class="card">
-                        <h2>Карточка 1</h2>
-                        <p>Это первый блок с текстом. Здесь используется
-                            флекс-раскладка.</p>
-                    </li>
-                    <li class="card">
-                        <h2>Карточка 2</h2>
-                        <p>Второй блок с текстом. Карточки выстраиваются в
-                            ряд.</p>
-                    </li>
-                    <li class="card">
-                        <h2>Карточка 3</h2>
-                        <p>Третий блок. При изменении ширины экрана карточки
-                            переносятся.</p>
-                    </li>
-                </ul>
-            </section>
+    <!-- Основной контент -->
+    <main>
 
-            <!-- Блок со ссылками (теперь это список) -->
-            <section class="links-section">
-                <h2>Ссылки</h2>
-                <ul class="links-list">
-                    <li><a href="#" class="link-blue">Синяя ссылка</a></li>
-                    <li><a href="#" class="link-orange">Оранжевая
-                            ссылка</a></li>
-                    <li><a href="#" class="link-purple">Обычная ссылка</a></li>
-                </ul>
-            </section>
+        <!-- Блок с карточками (теперь это список) -->
+        <section class="cards-section">
+            <ul class="cards-list">
+                <li class="card">
+                    <h2>Карточка 1</h2>
+                    <p>Это первый блок с текстом. Здесь используется
+                        флекс-раскладка.</p>
+                </li>
+                <li class="card">
+                    <h2>Карточка 2</h2>
+                    <p>Второй блок с текстом. Карточки выстраиваются в
+                        ряд.</p>
+                </li>
+                <li class="card">
+                    <h2>Карточка 3</h2>
+                    <p>Третий блок. При изменении ширины экрана карточки
+                        переносятся.</p>
+                </li>
+            </ul>
+        </section>
 
-            <!-- Кнопка -->
-            <div class="action-block">
-                <button type="button">Нажми меня</button>
-            </div>
+        <!-- Блок со ссылками (теперь это список) -->
+        <section class="links-section">
+            <h2>Ссылки</h2>
+            <ul class="links-list">
+                <li><a href="#" class="link-blue">Синяя ссылка</a></li>
+                <li><a href="#" class="link-orange">Оранжевая
+                        ссылка</a></li>
+                <li><a href="#" class="link-purple">Обычная ссылка</a></li>
+            </ul>
+        </section>
 
-        </main>
+        <!-- Кнопка -->
+        <div class="action-block">
+            <button type="button">Нажми меня</button>
+        </div>
 
-        <!-- Подвал сайта -->
-        <footer>
+    </main>
 
-            © 2025 Учебная страница. Связь:
-            <a href="mailto:example@mail.com">example@mail.com</a>
-        </footer>
+    <!-- Подвал сайта -->
+    <footer>
 
-    </body>
+        © 2025 Учебная страница. Связь:
+        <a href="mailto:example@mail.com">example@mail.com</a>
+    </footer>
+
+</body>
+
 </html>
