@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Складской отчёт</title>
+
+    <style>
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td,th {
+            padding: 10px;
+        }
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        th,td {
+            border: 1px solid;
+        }
+        tfoot {
+            background-color: lightcyan;
+        }
+        td:hover {
+            background-color: rgb(127, 127, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Складской отчёт</caption>
+        <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Стоимость</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Тетрадь</th>
+                <td>50</td>
+                <td>3</td>
+                <td>150</td>
+            </tr>
+
+            <tr>
+                <th>Ручка</th>
+                <td>30</td>
+                <td>2</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Итого</th>
+                <td>180</td>
+                <td>5</td>
+                <td>210</td>
+            </tr>
+        </tfoot>
+        <table>
+
+        </table>
+</body>
+
+</html>
+
+
+
+
+
+<!--Потому что tr для table не является прямым дочерним элементом-->
+<!--Правильный порядок элементов важен для правильности и удобства-->
+<!--Из-за математических ошибок не портится ничего,а вот из-за изменения в структуре может полность сломаться вся таблица-->
+<!--Браузер пытается добиться того,чтобы пользователь хоть что то увидел-->
+<!--Проверить визуально-->
