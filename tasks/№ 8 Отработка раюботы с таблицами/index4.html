@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+            min-width: 850px;
+        }
+        th,td {
+            border: 1px solid;
+            padding: 10px;
+        }
+        .nice {
+            font-weight: bold;
+            background-color: rgb(123, 165, 255);
+        }
+        .rec {
+            background-color: rgb(219, 170, 8);
+            border-radius: 10px;
+        }
+         .scroll {
+            overflow-x: auto;
+            max-width: 100%;
+         }
+         tbody tr:nth-child(even) {
+              background-color: lightgray;
+         }
+         tbody tr:hover {
+            background-color: rgb(112, 194, 194);
+         }
+         th {
+            white-space: nowrap;
+         }
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="scroll">
+        <table>
+        <caption>Сравнение ттарифных планов</caption>
+        <thead>
+            <tr>
+                <th>Тариф</th>
+                <th>Цена</th>
+                <th>Хранилище</th>
+                <th>Пользователи</th>
+                <th>Проекты</th>
+                <th>Поддержка</th>
+                <th>Резервное копирование</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Free</th>
+                <td>0 ₽/мес</td>
+                <td>5 ГБ</td>
+                <td>1</td>
+                <td>2</td>
+                <td>База знаний</td>
+                <td>Ручное</td>
+            </tr>
+            <tr>
+                <th>Start</th>
+                <td>200 ₽/мес</td>
+                <td>50 ГБ</td>
+                <td>до 5</td>
+                <td>10</td>
+                <td>E-mail, 24 ч</td>
+                <td>Ежедневное</td>
+            </tr>
+            <tr class="nice">
+                <th>Pro <span class="rec">(Рекомендовано)</span></th>
+                <td>500 ₽/мес</td>
+                <td>500 ГБ</td>
+                <td>до 20</td>
+                <td>50</td>
+                <td>Чат, 4 ч</td>
+                <td>Ежечасное</td>
+            </tr>
+            <tr>
+                <th>Ultra</th>
+                <td>1000 ₽/мес</td>
+                <td>2 ТБ</td>
+                <td>Без ограничений</td>
+                <td>Без ограничений</td>
+                <td>Персональный менеджер, 24/7</td>
+                <td>Непрерывное</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+
+</html>
+
+
+<!--Таблица-это состоит из ячеек,которые не могут сжаться меньше своей минимальной ширины-->
+<!---->
+<!---->
+<!---->

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика курсов</title>
+    <style>
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        tr th {
+            border: 1px solid;
+            padding: 15px;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 15px;
+        }
+
+        tfoot tr td {
+            
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tbody tr:hover {
+            background-color: lightblue;
+        }
+        .cource {
+        background-color: #d6eaf8;
+        font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Уровень</th>
+                <th rowspan="2">Курс</th>
+                <th colspan="3">Январь</th>
+                <th colspan="3">Февраль</th>
+            </tr>
+            <tr>
+                <th>Записались</th>
+                <th>Завершили</th>
+                <th>Успешность</th>
+                <th>Записались</th>
+                <th>Завершили</th>
+                <th>Успешность</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="cource" rowspan="2">Начальный уровень</td>
+                <td>HTML</td>
+                <td>40</td>
+                <td>30</td>
+                <td>75%</td>
+                <td>50</td>
+                <td>35</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>30</td>
+                <td>18</td>
+                <td>60%</td>
+                <td>45</td>
+                <td>27</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td class="cource" rowspan="2">Продвинутый уровень</td>
+                <td>JavaScript</td>
+                <td>20</td>
+                <td>8</td>
+                <td>40%</td>
+                <td>30</td>
+                <td>15</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>10</td>
+                <td>7</td>
+                <td>70%</td>
+                <td>25</td>
+                <td>20</td>
+                <td>80%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Итог</td>
+                <td>---</td>
+                <td>100</td>
+                <td>63</td>
+                <td>63%</td>
+                <td>150</td>
+                <td>97</td>
+                <td>65%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--не использовал формулу,не понял как-->
+<!--Браузер не определяет такое,чтобы он определил создатель задаёт "colspan" и "rowspan"-->
+<!--добавить nth-child-->
+<!--ну это просто понятнее-->
