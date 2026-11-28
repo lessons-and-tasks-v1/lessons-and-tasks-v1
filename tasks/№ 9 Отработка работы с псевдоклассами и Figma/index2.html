@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .breadcrumbs :not(:last-child)::after {
+            content: "/";
+        }
+
+        span {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            color: orange;
+        }
+
+        .menu a.active {
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            background-color: greenyellow;
+        }
+
+        .menu li:first-child {
+            border-left: 3px solid #ff9f43;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="breadcrumbs">
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+        <a href="/catalog/books">Книги</a>
+        <span>Фантастика</span>
+    </nav>
+
+    <ul class="menu">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/about">О нас</a></li>
+        <li><a href="/contacts" class="active">Контакты</a></li>
+        <li><a href="/blog">Блог</a></li>
+    </ul>
+</body>
+
+</html>
