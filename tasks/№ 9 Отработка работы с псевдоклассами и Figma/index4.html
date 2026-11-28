@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Витрина</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 24px;
+  }
+
+  .grid {
+    counter-reset: card total;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .card {
+    counter-increment: card total;
+    position: relative;
+    padding: 48px 16px 16px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card::before {
+    content: counter(card);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .card[data-badge="new"]::after {
+    content: "NEW";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #27ae60;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .card[data-badge="sale"]::after {
+    content: "SALE";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #e74c3c;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.527);
+  }
+
+  .card:nth-child(3n) {
+    background: #eef3ff;
+  }
+
+  .card:not([data-badge]) {
+    border: 2px dashed #aaa;
+  }
+
+  .grid::after {
+    content: "Всего: " counter(total);
+    grid-column: 1 / -1;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+  }
+  .card:nth-child(3n) {
+    background-color: rgb(185, 185, 185);
+  }
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <div class="card" data-badge="new">Товар 1</div>
+  <div class="card" data-badge="sale">Товар 2</div>
+  <div class="card">Товар 3</div>
+  <div class="card" data-badge="new">Товар 4</div>
+  <div class="card">Товар 5</div>
+  <div class="card" data-badge="sale">Товар 6</div>
+</div>
+
+</body>
+</html>

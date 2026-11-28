@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .todo {
+            list-style: none;
+        }
+
+        .todo li {
+            padding: 5px;
+        }
+
+        .todo li::before {
+            content: "о ";
+        }
+
+        .todo li.done::before {
+            content: "• ";
+        }
+
+        .todo li.done {
+            text-decoration: line-through;
+        }
+
+        .todo li.done::after {
+            content: " ✓";
+        }
+
+        .todo li:hover {
+            background: #f06f05;
+        }
+
+        .todo li:first-child {
+            border-top: 2px solid #333;
+        }
+
+        .todo li:last-child {
+            border-bottom: 2px solid #333;
+        }
+
+        .todo li:nth-child(even) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="todo">
+        <li>Купить хлеб</li>
+        <li class="done">Позвонить маме</li>
+        <li>Сдать отчёт</li>
+        <li class="done">Забрать посылку</li>
+        <li>Полить цветы</li>
+    </ul>
+</body>
+
+</html>
